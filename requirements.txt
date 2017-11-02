@@ -1,0 +1,4 @@
+Unidecode==0.04.21
+awesome-slugify==1.6.5
+regex==2017.09.23
+wsgiref==0.1.2

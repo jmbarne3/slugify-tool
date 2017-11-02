@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 
-import sys
+import sys, os
 from slugify import Slugify
 
 def main(txt):
     # Get stopwords
-    file = open('stopwords.txt', 'r')
+    path = os.path.dirname(os.path.realpath(__file__))
+    file = open(path + '/stopwords.txt', 'r')
     stopwords = file.readline().split(',')
 
     # Init slugify
